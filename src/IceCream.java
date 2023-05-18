@@ -1,4 +1,32 @@
-// Do not change class names for the JUnit tests. The names are used for autograding
-public class IceCream extends DessertItem {
 
+public class IceCream extends DessertItem {
+	int scoopCount;
+	double pricePerScoop;
+
+	public IceCream() {
+
+	}
+
+	public IceCream(String n, int sC, double pPS) {
+		super(n);
+		scoopCount = sC;
+		pricePerScoop = pPS;
+
+	}
+
+	public int getScoopCount() {
+		return scoopCount;
+	}
+
+	public double getPricePerScoop() {
+		return pricePerScoop;
+	}
+
+	public void setScoopCount(int sC) {
+		scoopCount = sC;
+	}
+
+	public void setPricePerScoop(double pPS) {
+		pricePerScoop = pPS;
+	}
 }
