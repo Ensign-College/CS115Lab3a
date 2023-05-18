@@ -18,14 +18,23 @@ jobs:
       - name: Run Python script
         id: run-script
         run: |
-          cd ..
-          for file in *.py
-          do
-              output=$(python "$file")
-              if [[ $output != *"OK"* ]]; then
-                  echo "script-output::$output"
-              fi
-          done
+          shopt -s nullglob
+          ls
+          cd ..;
+          ls
+          files=(*.py)
+          if [[ ${#files[@]} -gt 0 ]]; then
+            for file in "${files[@]}"
+            do
+                output=$(python "$file")
+                if [[ $output != *"OK"* ]]; then
+                    echo "script-output::$output"
+                fi
+            done
+          else
+            echo "No Python files found."
+          fi
+
 
       - name: Comment on PR
         uses: actions/github-script@v5
