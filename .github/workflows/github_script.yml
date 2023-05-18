@@ -18,6 +18,7 @@ jobs:
       - name: Run Python script
         id: run-script
         run: |
+          cd ..
           for file in *.py
           do
               output=$(python "$file")
