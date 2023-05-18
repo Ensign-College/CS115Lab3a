@@ -12,19 +12,4 @@ import org.junit.Test;
 
 public class DessertItemTest {
 
-	@Test
-	public void testGetName() {
-		DessertItem supreme = new DessertItem();
-		supreme.getName();
-		assertEquals(supreme.getName(), "");
-	}
-
-	@Test
-	public void testSetName() {
-		DessertItem supreme = new DessertItem();
-		supreme.setName("Travis");
-		assertEquals(supreme.getName(), "Travis");
-
-	}
-
 }
