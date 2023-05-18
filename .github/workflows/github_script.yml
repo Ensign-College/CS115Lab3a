@@ -24,7 +24,7 @@ jobs:
           ls
           wget https://raw.githubusercontent.com/Ensign-College/CS115Lab3aTest/main/icecream_test_lab3a.py
           wget https://raw.githubusercontent.com/Ensign-College/CS115Lab3aTest/main/cookie_test_lab3a.py
-          wget https://raw.githubusercontent.com/Ensign-College/CS115Lab3aTest/main/candy_lab3a.py
+          wget https://raw.githubusercontent.com/Ensign-College/CS115Lab3aTest/main/candy_test_lab3a.py
           wget https://raw.githubusercontent.com/Ensign-College/CS115Lab3aTest/main/sundae_test_lab3a.py
           wget https://raw.githubusercontent.com/Ensign-College/CS115Lab3aTest/main/dessertitem_test_lab3a.py
           files=(*.py)
